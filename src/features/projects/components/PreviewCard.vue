@@ -184,7 +184,7 @@ onUnmounted(() => {
   &-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 
     &-container {
       transition: transform 0.1s ease-in-out;

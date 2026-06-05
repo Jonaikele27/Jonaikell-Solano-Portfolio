@@ -1,47 +1,47 @@
-import thumbnailCubeWar from "../../../assets/thumbnails/cubewar.webp";
-import thumbnailQuibbo from "../../../assets/thumbnails/quibbo.webp";
-//import thumbnailParticles from "../../../assets/thumbnails/particles.webp";
-import thumbnailPokedex from "../../../assets/thumbnails/pokedex.webp";
-import thumbnailSharkie from "../../../assets/thumbnails/sharkie.webp";
-import thumbnailStreakon from "../../../assets/thumbnails/streakon.webp";
+import thumbnailAjCenterMobile from "../../../assets/images/projects/aj-center-mobile/AJ-CenterMovil.png";
+import thumbnailServiciosMultiplesOmm from "../../../assets/images/projects/servicios-multiples-omm/OMMService.png";
+import thumbnailAjCenter from "../../../assets/images/projects/aj-center/Aj-Center Admin.png";
+import thumbnailZybus from "../../../assets/images/projects/zybus/ZyBus.png";
+import thumbnailGameVerse from "../../../assets/images/projects/GameVerse/Captura de pantalla 2026-05-21 024252.png";
+import thumbnailCineFlix from "../../../assets/images/projects/CineFlix/image.png";
 
 import type { ProjectPreview } from "../../types";
 
 export default [
   {
-    title: "StreakOn",
-    slug: "streakon",
-    thumbnail: thumbnailStreakon,
-    description: "Social habit tracking app",
+    title: "AJ-Center Admin",
+    slug: "aj-center",
+    thumbnail: thumbnailAjCenter,
+    description: "Administrative management platform",
   },
   {
-    title: "CubeWar",
-    slug: "cubewar",
-    thumbnail: thumbnailCubeWar,
-    description: "Multiplayer strategy game",
+    title: "AJ-Center Movil",
+    slug: "aj-center-mobile",
+    thumbnail: thumbnailAjCenterMobile,
+    description: "Mobile management app",
   },
   {
-    title: "Quibbo",
-    slug: "quibbo",
-    thumbnail: thumbnailQuibbo,
-    description: "Multiplayer gaming platform",
+    title: "Servicios Multiples OMM",
+    slug: "servicios-multiples-omm",
+    thumbnail: thumbnailServiciosMultiplesOmm,
+    description: "Service management platform",
   },
   {
-    title: "Sharkie",
-    slug: "sharkie",
-    thumbnail: thumbnailSharkie,
-    description: "2D adventure game",
+    title: "Zybus",
+    slug: "zybus",
+    thumbnail: thumbnailZybus,
+    description: "Transportation monitoring platform",
   },
-  /**  {
-    title: "WebGL Particles",
-    slug: "particles",
-    thumbnail: thumbnailParticles,
-    description: "Dynamic 3D particles",
-  }, */
   {
-    title: "Pokédex",
-    slug: "pokedex",
-    thumbnail: thumbnailPokedex,
-    description: "Open-source learning project",
+    title: "GameVerse",
+    slug: "gameverse",
+    thumbnail: thumbnailGameVerse,
+    description: ".NET Core and Vue game platform",
+  },
+  {
+    title: "CineFlix",
+    slug: "cineflix",
+    thumbnail: thumbnailCineFlix,
+    description: "Movie web platform",
   },
 ] as const satisfies ProjectPreview[];

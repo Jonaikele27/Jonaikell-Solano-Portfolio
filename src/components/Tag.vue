@@ -37,6 +37,16 @@ const classes = computed(() => ["tag", `tag-variant-${props.variant}`]);
       color: #0f2e36;
     }
 
+    &-reactnative {
+      background-color: #61dafb;
+      color: #0f2e36;
+    }
+
+    &-vue {
+      background-color: #42b883;
+      color: #062217;
+    }
+
     &-websockets {
       background-color: #2674a4;
       color: white;
@@ -64,6 +74,61 @@ const classes = computed(() => ["tag", `tag-variant-${props.variant}`]);
 
     &-node {
       background-color: #237d23;
+      color: white;
+    }
+
+    &-nestjs {
+      background-color: #e0234e;
+      color: white;
+    }
+
+    &-springboot {
+      background-color: #6db33f;
+      color: #102005;
+    }
+
+    &-mysql {
+      background-color: #00758f;
+      color: white;
+    }
+
+    &-sqlserver {
+      background-color: #cc2927;
+      color: white;
+    }
+
+    &-vite {
+      background-color: #bd34fe;
+      color: white;
+    }
+
+    &-tailwind {
+      background-color: #38bdf8;
+      color: #06202b;
+    }
+
+    &-laravel {
+      background-color: #ff2d20;
+      color: white;
+    }
+
+    &-fastapi {
+      background-color: #009688;
+      color: white;
+    }
+
+    &-docker {
+      background-color: #2496ed;
+      color: white;
+    }
+
+    &-dotnet {
+      background-color: #512bd4;
+      color: white;
+    }
+
+    &-bootstrap {
+      background-color: #7952b3;
       color: white;
     }
 

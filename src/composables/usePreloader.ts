@@ -35,7 +35,7 @@ export const usePreloader = () => {
         });
       }
 
-      if (rect) rect.style.transform = `scaleY(${newProgress})`;
+      if (rect) rect.style.transform = `scaleY(${1 - newProgress})`;
     },
     { immediate: true },
   );

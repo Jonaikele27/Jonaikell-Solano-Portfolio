@@ -3,7 +3,6 @@ import Github from "./icons/Github.vue";
 import Linkedin from "./icons/Linkedin.vue";
 import Instagram from "./icons/Instagram.vue";
 import Mail from "./icons/Mail.vue";
-import X from "./icons/X.vue";
 import Link from "./Link.vue";
 import { t } from "../i18n/utils/translate";
 import ButtonRound from "./ButtonRound.vue";
@@ -15,13 +14,13 @@ const props = defineProps<{
 }>();
 
 // map icon names to components
-const icons = {
+// use a flexible index signature so unknown/social provider keys (e.g. "x") don't cause TS errors
+const icons: Record<string, any> = {
   mail: Mail,
   github: Github,
   linkedin: Linkedin,
-  x: X,
   instagram: Instagram,
-} as const;
+};
 
 const getAriaLabel = (name: string) => `${t("go-to")} ${name.charAt(0).toUpperCase() + name.slice(1)}`;
 </script>

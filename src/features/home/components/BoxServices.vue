@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import { computed, ref, watchEffect, onBeforeUnmount } from "vue";
+import { ref, watchEffect, onBeforeUnmount } from "vue";
 import gsap from "gsap";
-import { locale } from "../../../i18n/store";
 import { t } from "../../../i18n/utils/translate";
 import AppearingText from "../../../components/AppearingText.vue";
 import { BREAKPOINTS } from "../../../utils/sizes";
@@ -106,25 +105,24 @@ const handleTimelineCreated = (timeline: gsap.core.Timeline, delay: number) => {
   timelines.value = updatedTimelines;
 };
 
-const SERVICES_EN = [
-  { name: "Three.js & WebGL" },
-  { name: "Node.js & WebSockets" },
-  { name: "React & Vue" },
-  { name: "Kubernetes & Redis" },
-  { name: "Real-time Multiplayer" },
-] as const satisfies { name: string }[];
-
-const SERVICES_DE = [
-  { name: "Three.js & WebGL" },
-  { name: "Node.js & WebSockets" },
-  { name: "React & Vue" },
-  { name: "Kubernetes & Redis" },
-  { name: "Echtzeit-Mehrspieler" },
-] as const satisfies { name: string }[];
-
-const services = computed(() => {
-  return locale.value === "en" ? SERVICES_EN : SERVICES_DE;
-});
+const services = [
+  {
+    category: "Frontend",
+    items: ["React", "React Native"],
+  },
+  {
+    category: "Backend",
+    items: ["Spring Boot", "NestJS", ".NET Core"],
+  },
+  {
+    category: "Bases de Datos",
+    items: ["MySQL", "SQL Server"],
+  },
+  {
+    category: "Herramientas y DevOps",
+    items: ["GitHub"],
+  },
+] as const satisfies { category: string; items: string[] }[];
 </script>
 
 <template>
@@ -140,15 +138,20 @@ const services = computed(() => {
           />
         </div>
         <div class="box-services-list">
-          <div class="box-services-list-item" v-for="(service, index) in services" :key="service.name">
-            <p class="box-services-list-item-name">
+          <div class="box-services-list-group" v-for="(service, index) in services" :key="service.category">
+            <p class="box-services-list-group-title">
               <AppearingText
-                :text="service.name"
+                :text="service.category"
                 :steps="1"
                 :duration="0.35"
                 @timeline:created="(tl: gsap.core.Timeline) => handleTimelineCreated(tl, 0.15 + index * 0.1)"
               />
             </p>
+            <ul class="box-services-list-group-items">
+              <li class="box-services-list-item" v-for="item in service.items" :key="item">
+                <span class="box-services-list-item-name">{{ item }}</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -235,23 +238,24 @@ const services = computed(() => {
   }
 
   &-list {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-xs);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-sm);
 
     &-item {
       display: flex;
       flex-direction: column;
-      padding-left: 18px;
+      padding-left: 12px;
       position: relative;
 
       &::before {
         content: "";
         position: absolute;
         left: 2px;
-        top: 6px;
-        width: 4px;
-        height: 4px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 3px;
+        height: 3px;
         background-color: var(--color-text-cyan-400);
         border-radius: 50%;
       }
@@ -266,6 +270,27 @@ const services = computed(() => {
         @include mixins.landscape-large {
           font-size: var(--font-size-lg);
         }
+      }
+    }
+
+    &-group {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-xxs);
+
+      &-title {
+        color: var(--color-text-cyan-400);
+        font-size: var(--font-size-sm);
+        font-weight: 700;
+      }
+
+      &-items {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-xxs);
+        list-style: none;
+        margin: 0;
+        padding: 0;
       }
     }
   }

@@ -99,10 +99,10 @@ const handleTimelineCreated = (timeline: gsap.core.Timeline, delay: number) => {
     <div ref="wrapperRef" class="box-description">
       <div class="box-description-content">
         <div class="box-description-details">
-          <p class="box-description-details-name">David</p>
+          <p class="box-description-details-name">Jonaikell</p>
           <div class="box-description-details-location">
             <PinIcon class="box-description-details-location-icon" />
-            <p class="box-description-details-location-copy">{{ t("germany") }}</p>
+            <p class="box-description-details-location-copy">{{ t("nationality") }}</p>
           </div>
         </div>
         <div class="box-description-line"></div>
@@ -183,6 +183,8 @@ const handleTimelineCreated = (timeline: gsap.core.Timeline, delay: number) => {
 
       &-copy {
         font-size: var(--font-size-md);
+        color: var(--color-white-400);
+        font-weight: 600;
       }
     }
   }

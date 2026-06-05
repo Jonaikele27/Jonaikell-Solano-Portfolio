@@ -1,11 +1,15 @@
+<script setup lang="ts">
+import logoUrl from "../assets/images/LogoJona.png";
+</script>
+
 <template>
-  <svg class="logo-svg" viewBox="0 0 56 61" xmlns="http://www.w3.org/2000/svg" height="60" width="56">
-    <use href="#logo-path" />
-  </svg>
+  <img class="logo-image" :src="logoUrl" alt="Jonaikell Solano logo" width="56" height="61" />
 </template>
 
 <style scoped lang="scss">
-.logo-svg {
-  fill: var(--icon-color);
+.logo-image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 </style>
