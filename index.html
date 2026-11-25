@@ -39,6 +39,19 @@
     <link rel="shortcut icon" type="image/png" href="/src/assets/images/LogoJona.png" />
 
     <meta name="theme-color" content="#dfd1bc" />
+    <script>
+      // Applies the stored language before the app boots, so the document never
+      // renders with a mismatched `lang` attribute.
+      (function () {
+        try {
+          var stored = window.localStorage.getItem("portfolio-locale");
+          var preferred = stored || (navigator.language || "en").split("-")[0];
+          document.documentElement.lang = preferred === "es" ? "es-ES" : "en-US";
+        } catch (error) {
+          document.documentElement.lang = "en-US";
+        }
+      })();
+    </script>
   </head>
   <body class="is-loading">
     <svg style="display: none" viewBox="0 0 56 61" xmlns="http://www.w3.org/2000/svg">

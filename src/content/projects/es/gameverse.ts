@@ -10,15 +10,15 @@ export default {
   tags: ["dotnet", "vue", "mysql"],
   videoBorder: true,
   description:
-    "GameVerse is a project built with .NET Core, Vue, and MySQL.<br/><br/>This space is ready for the full case study, final description, and production screenshots when the project assets are available.",
+    "GameVerse es un proyecto desarrollado con .NET Core, Vue y MySQL.<br/><br/>Este espacio está listo para el caso de estudio completo, la descripción final y las capturas de producción cuando los recursos del proyecto estén disponibles.",
   components: [
     {
       type: "media",
       props: {
         type: "image",
         src: cover,
-        alt: "GameVerse overview",
-        caption: "Overview",
+        alt: "Vista general de GameVerse",
+        caption: "Vista general",
       },
     },
     {
@@ -26,8 +26,8 @@ export default {
       props: {
         type: "image",
         src: gameverse1,
-        alt: "GameVerse interface",
-        caption: "Interface",
+        alt: "Interfaz de GameVerse",
+        caption: "Interfaz",
       },
     },
     {
@@ -35,8 +35,8 @@ export default {
       props: {
         type: "image",
         src: gameverse2,
-        alt: "GameVerse reports",
-        caption: "Reports",
+        alt: "Reportes de GameVerse",
+        caption: "Reportes",
       },
     },
   ],

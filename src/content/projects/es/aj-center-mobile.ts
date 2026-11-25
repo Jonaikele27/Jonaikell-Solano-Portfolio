@@ -9,20 +9,20 @@ import routines from "../../../assets/images/projects/aj-center-mobile/rutinas.j
 import type { ProjectContent } from "../../types";
 
 export default {
-  title: "AJ-Center Movil",
+  title: "AJ-Center Móvil",
   theme: "dark",
   tags: ["reactnative", "nestjs", "mysql"],
   videoBorder: false,
   description:
-    "AJ-Center Mobile is the official app for AJ-Center gym members.<br/><br/>It allows you to schedule appointments, view workout routines, access personalized plans, track your fitness progress, and participate in challenges with incentives to stay motivated. Designed to support users throughout their training journey, the app offers a practical and personalized experience that makes it easier to achieve your health and wellness goals.",
+    "AJ-Center Móvil es la aplicación oficial para los socios del gimnasio AJ-Center.<br/><br/>Permite agendar citas, consultar rutinas de entrenamiento, acceder a planes personalizados, seguir el progreso fitness y participar en retos con incentivos para mantener la motivación. Diseñada para acompañar al usuario durante todo su proceso de entrenamiento, la aplicación ofrece una experiencia práctica y personalizada que facilita la consecución de sus objetivos de salud y bienestar.",
   components: [
     {
       type: "media",
       props: {
         type: "image",
         src: cover,
-        alt: "AJ-Center Mobile overview",
-        caption: "Overview",
+        alt: "Vista general de AJ-Center Móvil",
+        caption: "Vista general",
       },
     },
     {
@@ -30,8 +30,8 @@ export default {
       props: {
         type: "image",
         src: login,
-        alt: "AJ-Center Mobile login",
-        caption: "Login",
+        alt: "Inicio de sesión en AJ-Center Móvil",
+        caption: "Inicio de sesión",
       },
     },
     {
@@ -39,8 +39,8 @@ export default {
       props: {
         type: "image",
         src: home,
-        alt: "AJ-Center Mobile home",
-        caption: "Home",
+        alt: "Inicio de AJ-Center Móvil",
+        caption: "Inicio",
       },
     },
     {
@@ -48,8 +48,8 @@ export default {
       props: {
         type: "image",
         src: routines,
-        alt: "AJ-Center Mobile routines",
-        caption: "Routines",
+        alt: "Rutinas en AJ-Center Móvil",
+        caption: "Rutinas",
       },
     },
     {
@@ -57,8 +57,8 @@ export default {
       props: {
         type: "image",
         src: customRoutine,
-        alt: "AJ-Center Mobile custom routine",
-        caption: "Custom routine",
+        alt: "Rutina personalizada en AJ-Center Móvil",
+        caption: "Rutina personalizada",
       },
     },
     {
@@ -66,8 +66,8 @@ export default {
       props: {
         type: "image",
         src: physiotherapy,
-        alt: "AJ-Center Mobile physiotherapy",
-        caption: "Physiotherapy",
+        alt: "Fisioterapia en AJ-Center Móvil",
+        caption: "Fisioterapia",
       },
     },
     {
@@ -75,8 +75,8 @@ export default {
       props: {
         type: "image",
         src: challenges,
-        alt: "AJ-Center Mobile challenges",
-        caption: "Challenges",
+        alt: "Retos en AJ-Center Móvil",
+        caption: "Retos",
       },
     },
   ],

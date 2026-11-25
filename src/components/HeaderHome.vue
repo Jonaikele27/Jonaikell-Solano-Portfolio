@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import HeaderLink from "./HeaderLink.vue";
-import { onMounted, ref } from "vue";
+import { computed, onMounted, ref } from "vue";
 import { t } from "../i18n/utils/translate";
 import { lenis } from "../composables/useScroll";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -15,11 +15,11 @@ const handleLinkClick = (link: string) => {
 type ActiveLink = "about" | "projects" | "contact";
 const activeLink = ref<ActiveLink | null>(null);
 const sections: ActiveLink[] = ["about", "projects", "contact"];
-const ariaLabels = {
+const ariaLabels = computed(() => ({
   about: t("about"),
   projects: t("projects"),
   contact: t("contact"),
-};
+}));
 
 const isMounted = ref(false);
 

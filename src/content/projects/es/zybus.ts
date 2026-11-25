@@ -15,15 +15,15 @@ export default {
   tags: ["fastapi", "mysql", "react", "tailwind", "reactnative", "docker"],
   videoBorder: true,
   description:
-    "Zybus is a full stack transportation monitoring platform.<br/><br/>We developed a comprehensive digital solution to optimize the logistics of bus companies and improve the passenger experience. We designed and implemented the complete architecture: from real-time geolocation data synchronization to interactive administrative dashboards and intuitive mobile views for users.",
+    "Zybus es una plataforma integral de monitoreo de transporte.<br/><br/>Desarrollamos una solución digital completa para optimizar la logística de las empresas de autobuses y mejorar la experiencia del pasajero. Diseñamos e implementamos la arquitectura completa: desde la sincronización de datos de geolocalización en tiempo real hasta paneles administrativos interactivos y vistas móviles intuitivas para los usuarios.",
   components: [
     {
       type: "media",
       props: {
         type: "image",
         src: cover,
-        alt: "Zybus overview",
-        caption: "Overview",
+        alt: "Vista general de Zybus",
+        caption: "Vista general",
       },
     },
     {
@@ -31,8 +31,8 @@ export default {
       props: {
         type: "image",
         src: dashboard,
-        alt: "Zybus dashboard",
-        caption: "Dashboard",
+        alt: "Panel de control de Zybus",
+        caption: "Panel de control",
       },
     },
     {
@@ -40,8 +40,8 @@ export default {
       props: {
         type: "image",
         src: empleados,
-        alt: "Zybus employees",
-        caption: "Employees",
+        alt: "Empleados en Zybus",
+        caption: "Empleados",
       },
     },
     {
@@ -49,8 +49,8 @@ export default {
       props: {
         type: "image",
         src: reportes,
-        alt: "Zybus reports",
-        caption: "Reports",
+        alt: "Reportes de Zybus",
+        caption: "Reportes",
       },
     },
     {
@@ -59,13 +59,13 @@ export default {
         items: [
           {
             src: landingMobile,
-            alt: "Zybus mobile landing",
-            caption: "Landing mobile",
+            alt: "Landing móvil de Zybus",
+            caption: "Landing móvil",
           },
           {
             src: loginMobile,
-            alt: "Zybus mobile login",
-            caption: "Login",
+            alt: "Inicio de sesión móvil de Zybus",
+            caption: "Inicio de sesión",
           },
         ],
       },
@@ -76,13 +76,13 @@ export default {
         items: [
           {
             src: homeMobile,
-            alt: "Zybus mobile home",
-            caption: "Home mobile",
+            alt: "Inicio móvil de Zybus",
+            caption: "Inicio móvil",
           },
           {
             src: darkMobile,
-            alt: "Zybus mobile dark mode",
-            caption: "Dark mode",
+            alt: "Modo oscuro de Zybus",
+            caption: "Modo oscuro",
           },
         ],
       },

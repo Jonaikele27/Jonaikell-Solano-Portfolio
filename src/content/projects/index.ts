@@ -1,16 +1,18 @@
 import type { Locale } from "../../i18n/types";
-import ajCenterDe from "./de/aj-center";
-import ajCenterMobileDe from "./de/aj-center-mobile";
-import serviciosMultiplesOmmDe from "./de/servicios-multiples-omm";
-import zybusDe from "./de/zybus";
-import gameverseDe from "./de/gameverse";
-import cineflixDe from "./de/cineflix";
+import ajCenterEs from "./es/aj-center";
+import ajCenterMobileEs from "./es/aj-center-mobile";
+import serviciosMultiplesOmmEs from "./es/servicios-multiples-omm";
+import zybusEs from "./es/zybus";
+import gameverseEs from "./es/gameverse";
+import cineflixEs from "./es/cineflix";
+import odooAccountingEs from "./es/odoo-accounting";
 import ajCenterEn from "./en/aj-center";
 import ajCenterMobileEn from "./en/aj-center-mobile";
 import serviciosMultiplesOmmEn from "./en/servicios-multiples-omm";
 import zybusEn from "./en/zybus";
 import gameverseEn from "./en/gameverse";
 import cineflixEn from "./en/cineflix";
+import odooAccountingEn from "./en/odoo-accounting";
 
 export const projectIds = [
   "aj-center",
@@ -19,16 +21,18 @@ export const projectIds = [
   "zybus",
   "gameverse",
   "cineflix",
+  "odoo-accounting",
 ] as const;
 
 export const projectModules: Record<Locale, Record<string, any>> = {
-  de: {
-    "aj-center": { default: ajCenterDe },
-    "aj-center-mobile": { default: ajCenterMobileDe },
-    "servicios-multiples-omm": { default: serviciosMultiplesOmmDe },
-    zybus: { default: zybusDe },
-    gameverse: { default: gameverseDe },
-    cineflix: { default: cineflixDe },
+  es: {
+    "aj-center": { default: ajCenterEs },
+    "aj-center-mobile": { default: ajCenterMobileEs },
+    "servicios-multiples-omm": { default: serviciosMultiplesOmmEs },
+    zybus: { default: zybusEs },
+    gameverse: { default: gameverseEs },
+    cineflix: { default: cineflixEs },
+    "odoo-accounting": { default: odooAccountingEs },
   },
   en: {
     "aj-center": { default: ajCenterEn },
@@ -37,5 +41,6 @@ export const projectModules: Record<Locale, Record<string, any>> = {
     zybus: { default: zybusEn },
     gameverse: { default: gameverseEn },
     cineflix: { default: cineflixEn },
+    "odoo-accounting": { default: odooAccountingEn },
   },
 };

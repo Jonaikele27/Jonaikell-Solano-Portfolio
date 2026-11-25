@@ -4,6 +4,7 @@ import thumbnailAjCenter from "../../../assets/images/projects/aj-center/Aj-Cent
 import thumbnailZybus from "../../../assets/images/projects/zybus/ZyBus.png";
 import thumbnailGameVerse from "../../../assets/images/projects/GameVerse/Captura de pantalla 2026-05-21 024252.png";
 import thumbnailCineFlix from "../../../assets/images/projects/CineFlix/image.png";
+import thumbnailOdooAccounting from "../../../assets/images/projects/odoo-accounting/accounting.png";
 
 import type { ProjectPreview } from "../../types";
 
@@ -15,7 +16,7 @@ export default [
     description: "Administrative management platform",
   },
   {
-    title: "AJ-Center Movil",
+    title: "AJ-Center Mobile",
     slug: "aj-center-mobile",
     thumbnail: thumbnailAjCenterMobile,
     description: "Mobile management app",
@@ -43,5 +44,11 @@ export default [
     slug: "cineflix",
     thumbnail: thumbnailCineFlix,
     description: "Movie web platform",
+  },
+  {
+    title: "Accounting and Tax Management System — Odoo 19",
+    slug: "odoo-accounting",
+    thumbnail: thumbnailOdooAccounting,
+    description: "Accounting and tax management on Odoo 19",
   },
 ] as const satisfies ProjectPreview[];

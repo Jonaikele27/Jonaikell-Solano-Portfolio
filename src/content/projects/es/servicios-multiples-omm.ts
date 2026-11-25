@@ -7,20 +7,20 @@ import reportes from "../../../assets/images/projects/servicios-multiples-omm/Re
 import type { ProjectContent } from "../../types";
 
 export default {
-  title: "Servicios Multiples OMM",
+  title: "Servicios Múltiples OMM",
   theme: "light",
   tags: ["react", "laravel", "mysql", "tailwind"],
   videoBorder: true,
   description:
-    "Servicios Multiples OMM is a web platform built to present and manage the company's service offering through a clean, organized, and responsive experience.<br/><br/>The project focuses on clear information architecture, practical navigation, and a professional interface that helps users understand available services and contact the business easily.",
+    "Servicios Múltiples OMM es una plataforma web construida para presentar y administrar la oferta de servicios de la empresa mediante una experiencia limpia, organizada y responsiva.<br/><br/>El proyecto se centra en una arquitectura de información clara, una navegación práctica y una interfaz profesional que ayuda a los usuarios a comprender los servicios disponibles y a contactar al negocio de forma sencilla.",
   components: [
     {
       type: "media",
       props: {
         type: "image",
         src: dashboard,
-        alt: "Servicios Multiples OMM dashboard",
-        caption: "Dashboard",
+        alt: "Panel de control de Servicios Múltiples OMM",
+        caption: "Panel de control",
       },
     },
     {
@@ -28,8 +28,8 @@ export default {
       props: {
         type: "image",
         src: clientes,
-        alt: "Servicios Multiples OMM clients",
-        caption: "Clients",
+        alt: "Clientes de Servicios Múltiples OMM",
+        caption: "Clientes",
       },
     },
     {
@@ -37,8 +37,8 @@ export default {
       props: {
         type: "image",
         src: facturas,
-        alt: "Servicios Multiples OMM invoices",
-        caption: "Invoices",
+        alt: "Facturas de Servicios Múltiples OMM",
+        caption: "Facturas",
       },
     },
     {
@@ -46,8 +46,8 @@ export default {
       props: {
         type: "image",
         src: proveedores,
-        alt: "Servicios Multiples OMM suppliers",
-        caption: "Suppliers",
+        alt: "Proveedores de Servicios Múltiples OMM",
+        caption: "Proveedores",
       },
     },
     {
@@ -55,8 +55,8 @@ export default {
       props: {
         type: "image",
         src: reportes,
-        alt: "Servicios Multiples OMM reports",
-        caption: "Reports",
+        alt: "Reportes de Servicios Múltiples OMM",
+        caption: "Reportes",
       },
     },
   ],

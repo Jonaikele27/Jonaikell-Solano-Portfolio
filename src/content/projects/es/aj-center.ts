@@ -15,15 +15,15 @@ export default {
   tags: ["react", "nestjs", "mysql", "vite", "tailwind"],
   videoBorder: false,
   description:
-    "AJ-Center Admin is an administrative platform designed to efficiently manage AJ-Center's operations.<br/><br/>It allows you to control memberships, users, payments, attendance, services, and reports from a centralized interface, facilitating information tracking and optimizing the center's administrative processes. Its goal is to provide fast, secure, and organized management to improve the experience for both staff and customers.",
+    "AJ-Center Admin es una plataforma administrativa diseñada para gestionar de forma eficiente las operaciones de AJ-Center.<br/><br/>Permite controlar membresías, usuarios, pagos, asistencia, servicios y reportes desde una interfaz centralizada, facilitando el seguimiento de la información y optimizando los procesos administrativos del centro. Su objetivo es ofrecer una gestión rápida, segura y organizada que mejore la experiencia tanto del personal como de los clientes.",
   components: [
     {
       type: "media",
       props: {
         type: "image",
         src: cover,
-        alt: "AJ-Center Admin overview",
-        caption: "Overview",
+        alt: "Vista general de AJ-Center Admin",
+        caption: "Vista general",
       },
     },
     {
@@ -31,8 +31,8 @@ export default {
       props: {
         type: "image",
         src: dashboard,
-        alt: "AJ-Center Admin dashboard",
-        caption: "Dashboard",
+        alt: "Panel de control de AJ-Center Admin",
+        caption: "Panel de control",
       },
     },
     {
@@ -40,8 +40,8 @@ export default {
       props: {
         type: "image",
         src: miembros,
-        alt: "AJ-Center Admin members",
-        caption: "Members",
+        alt: "Membros de AJ-Center Admin",
+        caption: "Miembros",
       },
     },
     {
@@ -49,8 +49,8 @@ export default {
       props: {
         type: "image",
         src: ejercicios,
-        alt: "AJ-Center Admin exercises",
-        caption: "Exercises",
+        alt: "Ejercicios de AJ-Center Admin",
+        caption: "Ejercicios",
       },
     },
     {
@@ -58,8 +58,8 @@ export default {
       props: {
         type: "image",
         src: rutinas,
-        alt: "AJ-Center Admin routines",
-        caption: "Routines",
+        alt: "Rutinas de AJ-Center Admin",
+        caption: "Rutinas",
       },
     },
     {
@@ -67,8 +67,8 @@ export default {
       props: {
         type: "image",
         src: rutinaSemanal,
-        alt: "AJ-Center Admin weekly routine",
-        caption: "Weekly routine",
+        alt: "Rutina semanal de AJ-Center Admin",
+        caption: "Rutina semanal",
       },
     },
     {
@@ -76,8 +76,8 @@ export default {
       props: {
         type: "image",
         src: fisioterapia,
-        alt: "AJ-Center Admin physiotherapy",
-        caption: "Physiotherapy",
+        alt: "Fisioterapia en AJ-Center Admin",
+        caption: "Fisioterapia",
       },
     },
     {
@@ -85,8 +85,8 @@ export default {
       props: {
         type: "image",
         src: reportes,
-        alt: "AJ-Center Admin reports",
-        caption: "Reports",
+        alt: "Reportes de AJ-Center Admin",
+        caption: "Reportes",
       },
     },
   ],

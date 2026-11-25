@@ -15,14 +15,14 @@ export default {
   source: "https://github.com/davidhckh/pokedex",
   videoBorder: true,
   description:
-    "Eines meiner ersten Webprojekte, um Kernkonzepte der Webentwicklung zu üben. Der Pokédex ist Open Source, damit andere Entwickler auf dieselbe Weise lernen können wie ich.<br/><br/>Er interagiert außerdem mit einer öffentlichen API, um zusätzliche Erfahrung zu sammeln.",
+    "Uno de mis primeros proyectos web para practicar los conceptos básicos del desarrollo web. El Pokédex es de código abierto para que otros desarrolladores puedan aprender de la misma forma en que lo hice.<br/><br/>También interactúa con una API pública, para ganar experiencia con la obtención asíncrona de datos.",
   components: [
     {
       type: "media",
       props: {
         type: "video",
         src: videoPokedex,
-        caption: "Pokédex Anwendung",
+        caption: "Aplicación Pokédex",
       },
     },
     {
@@ -30,8 +30,8 @@ export default {
       props: {
         type: "image",
         src: pokedex0,
-        alt: "Standardansicht",
-        caption: "Standardansicht",
+        alt: "Vista por defecto",
+        caption: "Vista por defecto",
       },
     },
     {
@@ -39,8 +39,8 @@ export default {
       props: {
         type: "image",
         src: pokedex1,
-        alt: "Suchfunktion",
-        caption: "Suchfunktion",
+        alt: "Función de búsqueda",
+        caption: "Función de búsqueda",
       },
     },
     {
@@ -48,8 +48,8 @@ export default {
       props: {
         type: "image",
         src: pokedex2,
-        alt: "Responsives Design",
-        caption: "Responsives Design",
+        alt: "Diseño responsivo",
+        caption: "Diseño responsivo",
       },
     },
     {
@@ -57,8 +57,8 @@ export default {
       props: {
         type: "image",
         src: pokedex3,
-        alt: "Lazy-Loading",
-        caption: "Lazy-Loading",
+        alt: "Carga diferida",
+        caption: "Carga diferida",
       },
     },
   ],

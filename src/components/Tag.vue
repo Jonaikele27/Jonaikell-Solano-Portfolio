@@ -156,6 +156,21 @@ const classes = computed(() => ["tag", `tag-variant-${props.variant}`]);
       background-color: #95630e;
       color: white;
     }
+
+    &-odoo {
+      background-color: #714b67;
+      color: white;
+    }
+
+    &-python {
+      background-color: #3776ab;
+      color: white;
+    }
+
+    &-xml {
+      background-color: #e37933;
+      color: #241202;
+    }
   }
 }
 </style>

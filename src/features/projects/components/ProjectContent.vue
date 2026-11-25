@@ -18,7 +18,12 @@ const { content, projectId } = defineProps<{
 const loadedPreviews = ref<ProjectPreview[] | null>(null);
 
 const loadPreviews = async () => {
-  const module = await previews[locale.value as keyof typeof previews]();
+  if (!locale.value) return;
+
+  const loader = previews[locale.value as keyof typeof previews];
+  if (!loader) return;
+
+  const module = await loader();
   loadedPreviews.value = module.default;
 };
 

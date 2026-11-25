@@ -15,7 +15,7 @@ export default {
   live: "https://sharkie.david-hckh.com/",
   source: "https://github.com/davidhckh/sharkie-game",
   description:
-    "Sharkie ist ein 2D-Unterwasser-Abenteuerspiel, entwickelt mit Vanilla JavaScript und HTML5 Canvas.<br/><br/>Das Projekt basiert auf objektorientierten Programmierprinzipien und nutzt eigene Klassen für Spielfiguren, Gegner und Spielsysteme, ergänzt durch flüssige Animationen, Kampfsysteme und mehrschichtige Parallax-Hintergründe.",
+    "Sharkie es un juego de aventura submarina 2D desarrollado con JavaScript puro y HTML5 Canvas.<br/><br/>El proyecto se estructura sobre principios de programación orientada a objetos, con clases propias para las entidades, los enemigos y los sistemas de juego, además de animaciones fluidas, mecánicas de combate y fondos con paralaje en varias capas.",
   components: [
     {
       type: "media",
@@ -30,8 +30,8 @@ export default {
       props: {
         type: "image",
         src: sharkie0,
-        alt: "Spielfiguren und Karten-Design",
-        caption: "Spielfiguren und Karten-Design",
+        alt: "Entidades y diseño de mapas",
+        caption: "Entidades y diseño de mapas",
       },
     },
     {
@@ -39,8 +39,8 @@ export default {
       props: {
         type: "image",
         src: sharkie1,
-        alt: "Boss-Kampf",
-        caption: "Boss-Kampf",
+        alt: "Combate contra el jefe",
+        caption: "Combate contra el jefe",
       },
     },
     {
@@ -48,8 +48,8 @@ export default {
       props: {
         type: "image",
         src: sharkie2,
-        alt: "Mission",
-        caption: "Mission",
+        alt: "Misión",
+        caption: "Misión",
       },
     },
     {
@@ -57,8 +57,8 @@ export default {
       props: {
         type: "image",
         src: sharkie3,
-        alt: "Sieg-Screen",
-        caption: "Sieg-Screen",
+        alt: "Pantalla de victoria",
+        caption: "Pantalla de victoria",
       },
     },
     {
@@ -66,8 +66,8 @@ export default {
       props: {
         type: "image",
         src: sharkie4,
-        alt: "Todes-Screen",
-        caption: "Todes-Screen",
+        alt: "Pantalla de derrota",
+        caption: "Pantalla de derrota",
       },
     },
   ],

@@ -6,12 +6,16 @@ export const preloaderVisible = ref(true);
 
 export const usePreloader = () => {
   const progress = ref(0);
-  const resourcesProgress = ref(0);
+  const resourcesProgress = ref(resources.toLoad ? resources.loaded / resources.toLoad : 0);
+
+  resources.on("progress", (newProgress) => {
+    resourcesProgress.value = newProgress;
+  });
 
   onMounted(() => {
-    resources.on("progress", (newProgress) => {
-      resourcesProgress.value = newProgress;
-    });
+    // The app can mount after some resources already finished loading,
+    // so the progress is synced with the current state of the loader.
+    resourcesProgress.value = resources.toLoad ? resources.loaded / resources.toLoad : 0;
   });
 
   watch(

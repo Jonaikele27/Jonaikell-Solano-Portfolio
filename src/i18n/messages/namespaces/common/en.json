@@ -27,5 +27,12 @@
   "source-code": "Source Code",
   "switch-to-project": "Switch to project {project}",
   "version": "Version",
-  "view-project": "View project"
+  "view-project": "View project",
+  "skill-category-frontend": "Frontend Development",
+  "skill-category-backend": "Backend Development",
+  "skill-category-fullstack": "Full-Stack Development",
+  "skill-category-devops": "DevOps & Development Tools",
+  "skill-category-databases": "Databases",
+  "meta-title": "Jonaikell Solano - Full Stack Developer",
+  "meta-description": "Web developer creating interactive 3D web experiences and real-time apps with WebGL, TypeScript, and Node.js for high-performance, engaging websites."
 }

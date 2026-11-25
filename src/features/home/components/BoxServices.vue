@@ -107,22 +107,26 @@ const handleTimelineCreated = (timeline: gsap.core.Timeline, delay: number) => {
 
 const services = [
   {
-    category: "Frontend",
-    items: ["React", "React Native"],
+    categoryKey: "skill-category-frontend",
+    items: ["React", "React Native", "Vue.js", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS"],
   },
   {
-    category: "Backend",
-    items: ["Spring Boot", "NestJS", ".NET Core"],
+    categoryKey: "skill-category-backend",
+    items: ["Spring Boot", "NestJS", ".NET Core", "FastAPI"],
   },
   {
-    category: "Bases de Datos",
-    items: ["MySQL", "SQL Server"],
+    categoryKey: "skill-category-fullstack",
+    items: ["Odoo 19"],
   },
   {
-    category: "Herramientas y DevOps",
-    items: ["GitHub"],
+    categoryKey: "skill-category-devops",
+    items: ["GitHub", "Git", "Docker", "Firebase"],
   },
-] as const satisfies { category: string; items: string[] }[];
+  {
+    categoryKey: "skill-category-databases",
+    items: ["MySQL", "SQL Server", "SQL", "PostgreSQL"],
+  },
+] as const satisfies { categoryKey: string; items: string[] }[];
 </script>
 
 <template>
@@ -138,10 +142,10 @@ const services = [
           />
         </div>
         <div class="box-services-list">
-          <div class="box-services-list-group" v-for="(service, index) in services" :key="service.category">
+          <div class="box-services-list-group" v-for="(service, index) in services" :key="service.categoryKey">
             <p class="box-services-list-group-title">
               <AppearingText
-                :text="service.category"
+                :text="t(service.categoryKey)"
                 :steps="1"
                 :duration="0.35"
                 @timeline:created="(tl: gsap.core.Timeline) => handleTimelineCreated(tl, 0.15 + index * 0.1)"
